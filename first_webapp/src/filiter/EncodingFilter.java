@@ -16,12 +16,7 @@ import javax.servlet.http.HttpFilter;
 @WebFilter("/*")
 public class EncodingFilter extends HttpFilter implements Filter {
 
-	/**
-	 * @see Filter#destroy()
-	 */
-	public void destroy() {
-		
-	}
+	
 
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
@@ -33,11 +28,5 @@ public class EncodingFilter extends HttpFilter implements Filter {
 		chain.doFilter(request, response);
 	}
 
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
-	public void init(FilterConfig fConfig) throws ServletException {
-		
-	}
-
+	
 }
